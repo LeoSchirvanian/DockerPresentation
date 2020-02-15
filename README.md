@@ -88,5 +88,61 @@ Vous avez le choix entre deux méthodes d'utilisation :
  
 Vous pouvez maintenant utiliser les lignes de commande de Docker
 
+## UTILISATION
 
+Une fois que vous êtes dans votre terminal et que tout a bien été installé comme expliqué précédemment, vous pouvez tapez toutes les lignes de commandes ci-dessous :
 
+* Regarder les container en éxécution
+
+ ```bash
+ docker ps
+ ```
+* Lancer une image Debian dans le terminal. Si vous ne l'avez pas (ce qui est le cas lors de la première éxécution de cette ligne de commande), Docker va automatiquement télécharger l'image de Debian sur Docker Hub.
+
+ ```bash
+ docker run -ti debian
+ ```
+ 
+ * Un conteneur avec l'image Debian officiel de Docker Hub va se créer et vous trouvez maintenant dans le conteneur. Nous allons créer un fichier test.txt pour essayer.
+ 
+ ```bash
+ ls
+ ```
+ 
+ ```bash
+ touch test.txt
+ ```
+ 
+ ```bash
+ ls
+ ```
+
+* Ouvrez un autre terminal dans Cmder (lancer Boot2Docker ssh si nécessaire), vous allez voir toutes les images que vous avez téléchargé 
+
+```bash
+ docker images
+ ```
+ 
+ ```bash
+ docker ps
+ ```
+
+* Les modifications faites à l'image de Debian n'ont toujours pas été enregistré, nous allons les sauvegarder dans une nouvelle image pour garder l'image Debian comme template pour de futurs projets (xxx représente les 3 premiers chiffres de l'image id renvoyé par votre terminal). 
+
+```bash
+docker diff xxx
+```
+
+```
+docker commit xxx debiantest
+```
+
+```
+docker images
+```
+
+* Nous pouvons maintenant exporter notre image pour que d'autres personnes puissent la télécharger et l'utiliser
+
+```
+docker save debiantest > 
+```
