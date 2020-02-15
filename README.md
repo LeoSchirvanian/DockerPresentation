@@ -2,10 +2,14 @@
 
 Dans ce README, nous allons apprendre à installer et utiliser la technologie Docker pour créer un environnement de développement à l'aide d'images et de docker file et exporter ses projets.
 
+<p align="center">
+  <img src="./img/docker.jpg" alt="Kitten" title="A cute kitten" width="800" />
+</p>
+
 ## Prérequis
 
 Pour ce tutoriel, vous devez être soit sur Windows ou sur une distribution Linux (pas de MacOS malheureusement).
-Il faut faudra également un bon terminal : sur Linux pas de soucis, en revanche vous pouvez utiliser [Cmder](https://cmder.net/) qui est un super émulateur de terminal.
+Il faut faudra également un bon terminal : sur Linux pas de soucis, en revanche sur Windows vous pouvez utiliser [Cmder](https://cmder.net/) qui est un super émulateur de terminal.
 
 ![alt text](https://cmder.net/img/main.png)
 
