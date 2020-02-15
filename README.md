@@ -1,12 +1,12 @@
-# Présentation de Docker
+# PRÉSENTATION DE DOCKER
 
 Dans ce README, nous allons apprendre à installer et utiliser la technologie Docker pour créer un environnement de développement à l'aide d'images et de docker file et exporter ses projets.
 
 <p align="center">
-  <img src="./img/docker.jpg" title="Docker logo" width="800" />
+  <img src="./img/docker.jpg" title="Docker logo" width="500" />
 </p>
 
-## Prérequis
+# PRÉREQUIS
 
 Pour ce tutoriel, vous devez être soit sur Windows ou sur une distribution Linux (pas de MacOS malheureusement).
 Il faut faudra également un bon terminal : sur Linux pas de soucis, en revanche sur Windows vous pouvez utiliser [Cmder](https://cmder.net/) qui est un super émulateur de terminal.
@@ -21,19 +21,61 @@ Docker est une technologie qui se base sur LXC : Linux Container, il est donc re
 </a>  pour apprendre rapidement les bases de Linux.
 
 
+# INSTALLATION 
 
-## Installation 
+## LINUX
 
-### Windows
+<a id="ref1"></a>
 
-#### 1 Utiliser Ubuntu on Windows :
+Commencez par vous rendre dans votre terminal et tapez ces lignes de commandes :
 
+1. Mettre à jour les apt packages
 
-
-
-
-### Linux
-
+```bash
+sudo apt-get update
 ```
-sudo apt-get install docker
+
+2. Installer docker
+
+```bash
+sudo apt install docker.io
 ```
+
+3. (OPTIONNEL) Lancer Docker au démarrage
+
+```bash
+sudo systemctl start docker
+```
+
+```bash
+sudo systemctl enable docker
+```
+
+
+
+
+## WINDOWS
+
+Vous avez le choix entre deux méthodes d'utilisation :
+* Soit vous êtes familier avec Linux et alors vous pouvez utiliser Ubuntu on Windows
+
+* Soit vous êtes totalement pro Windows et vous pouvez utiliser Boot2Docker
+
+### 1. UBUNTU ON WINDOWS
+
+* Rendez vous sur le Microsft Store et téléchargez l'application Ubuntu. Cette dernière permet en fait d'utiliser le terminal d'Ubuntu et de lancer des lignes de commande Ubuntu sous Windows.
+
+image1
+
+* Une fois installée, il est temps d'installer ![Docker Desktop](https://www.docker.com/products/docker-desktop) afin de pouvoir se connecter facilement et télécharger des images et des docker files sur le Hub de Docker.
+
+image2
+
+* Une fois ces étapes effectuées, lancez Cmder avec un terminal en bash et allez à la partie <a href="ref1" target=_blank>Installation Linux</a>
+
+### 2. Boot2Docker
+
+
+
+
+
