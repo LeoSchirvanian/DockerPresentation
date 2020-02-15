@@ -98,7 +98,7 @@ Une fois que vous êtes dans votre terminal et que tout a bien été installé c
  docker ps
  ```
 <p align="center">
-  <img src="./img/term1.JPG" title="Cmder image" width="800" />
+  <img src="./img/term1.JPG" title="Cmder image" width="1000" />
 </p>
  
 * Lancer une image Debian dans le terminal. Si vous ne l'avez pas (ce qui est le cas lors de la première éxécution de cette ligne de commande), Docker va automatiquement télécharger l'image de Debian sur Docker Hub.
@@ -108,7 +108,7 @@ Une fois que vous êtes dans votre terminal et que tout a bien été installé c
  ```
  
  <p align="center">
-  <img src="./img/term2.JPG" title="Cmder image" width="800" />
+  <img src="./img/term2.JPG" title="Cmder image" width="1000" />
 </p>
  
  * Un conteneur avec l'image Debian officiel de Docker Hub va se créer et vous trouvez maintenant dans le conteneur. Nous allons créer un fichier test.txt pour essayer.
@@ -126,7 +126,7 @@ Une fois que vous êtes dans votre terminal et que tout a bien été installé c
  ```
  
  <p align="center">
-  <img src="./img/term3.JPG" title="Cmder image" width="800" />
+  <img src="./img/term3.JPG" title="Cmder image" width="1000" />
 </p>
 
 * Ouvrez un autre terminal dans Cmder (lancer Boot2Docker ssh si nécessaire), vous allez voir toutes les images que vous avez téléchargé 
@@ -140,7 +140,7 @@ Une fois que vous êtes dans votre terminal et que tout a bien été installé c
  ```
 
 <p align="center">
-  <img src="./img/term4.JPG" title="Cmder image" width="800" />
+  <img src="./img/term4.JPG" title="Cmder image" width="1000" />
 </p>
 
 * Les modifications faites à l'image de Debian n'ont toujours pas été enregistré, nous allons les sauvegarder dans une nouvelle image pour garder l'image Debian comme template pour de futurs projets (xxx représente les 3 premiers chiffres de l'image id renvoyé par votre terminal). 
@@ -158,7 +158,7 @@ docker images
 ```
 
 <p align="center">
-  <img src="./img/term5.JPG" title="Cmder image" width="800" />
+  <img src="./img/term5.JPG" title="Cmder image" width="1000" />
 </p>
 
 * Nous pouvons maintenant exporter notre image pour que d'autres personnes puissent la télécharger et l'utiliser
@@ -168,9 +168,17 @@ docker save debiantest > debiantest.zip
 ```
 
 <p align="center">
-  <img src="./img/term6.JPG" title="Cmder image" width="800" />
+  <img src="./img/term6.JPG" title="Cmder image" width="1000" />
 </p>
 
 <p align="center">
-  <img src="./img/term7.JPG" title="Cmder image" width="800" />
+  <img src="./img/term7.JPG" title="Cmder image" width="500" />
 </p>
+
+## EXPORT
+
+Vous pouvez retrouvez l'image générée dans ce tutoriel dans ce repository, vous pouvez le télécharger le dezipper, le run et le modifier à votre tour
+
+```
+docker run -ti debiantest
+```
