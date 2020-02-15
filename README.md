@@ -182,3 +182,6 @@ Vous pouvez retrouvez l'image générée dans ce tutoriel dans ce repository, vo
 ```
 docker run -ti debiantest
 ```
+
+C'est donc de cette manière que vous pourrez rapidement déployer et exporter ou télécharger et utiliser des applications nécessitant un environnement particulier
+
