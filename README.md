@@ -12,7 +12,7 @@ Pour ce tutoriel, vous devez être soit sur Windows ou sur une distribution Linu
 Il faut faudra également un bon terminal : sur Linux pas de soucis, en revanche sur Windows vous pouvez utiliser [Cmder](https://cmder.net/) qui est un super émulateur de terminal.
 
 <p align="center">
-  <img src="https://cmder.net/img/main.png" title="Cmder image" width="800" />
+  <img src="./img/cmder.png" title="Cmder image" width="800" />
 </p>
 
 Docker est une technologie qui se base sur LXC : Linux Container, il est donc recommandé d'avoir quelques notions élémentaires en Linux et en commande bash. Voici un super 
