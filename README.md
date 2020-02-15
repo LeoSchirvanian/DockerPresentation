@@ -63,9 +63,15 @@ Vous avez le choix entre deux méthodes d'utilisation :
 
 1. Installez ![Docker Desktop](https://www.docker.com/products/docker-desktop) afin de pouvoir se connecter facilement et télécharger des images et des docker files sur le Hub de Docker.
 
-image2
+<p align="center">
+  <img src="./img/docker-desktop.JPG" title="Cmder image" width="800" />
+</p>
 
 2. Lancer Docker Desktop et lancez Cmder, vous pouvez maintenant utiliser les lignes de commande de Docker
+
+<p align="center">
+  <img src="./img/dockdesk.JPG" title="Cmder image" width="800" />
+</p>
 
 ### 2. Boot2Docker
  
@@ -76,6 +82,10 @@ image2
  ```bash
  Boot2Docker ssh
  ```
+ <p align="center">
+  <img src="./img/boot2docker.JPG" title="Cmder image" width="800" />
+</p>
+ 
 Vous pouvez maintenant utiliser les lignes de commande de Docker
 
 
