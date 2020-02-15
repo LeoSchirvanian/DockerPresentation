@@ -25,8 +25,6 @@ Docker est une technologie qui se base sur LXC : Linux Container, il est donc re
 
 ## LINUX
 
-<a id="ref1"></a>
-
 Commencez par vous rendre dans votre terminal et tapez ces lignes de commandes :
 
 1. Mettre à jour les apt packages
@@ -51,8 +49,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-
-
+4. Vous pouvez maintenant utiliser les commandes Docker dans votre terminal
 
 ## WINDOWS
 
@@ -71,10 +68,17 @@ image1
 
 image2
 
-* Une fois ces étapes effectuées, lancez Cmder avec un terminal en bash et allez à la partie <a href="ref1" target=_blank>Installation Linux</a>
+* Une fois ces étapes effectuées, lancez Cmder avec un terminal en bash et allez à la partie Installation Linux et tapez les mêmes lignes de commande dans Cmder.
 
 ### 2. Boot2Docker
-
+ 
+ * Installez simplement [Boot2Docker](https://www.ibm.com/developerworks/community/blogs/jfp/entry/running_ipython_notebooks_in_a_docker_container_on_windows?lang=en), l'installation est très bien expliqué sur ce site. 
+ 
+ * Une fois cela fait vous avez fini, lancez simplement dans votre terminal favori :
+ 
+ ```bash
+ Boot2Docker
+ ```
 
 
 
