@@ -97,11 +97,19 @@ Une fois que vous êtes dans votre terminal et que tout a bien été installé c
  ```bash
  docker ps
  ```
+<p align="center">
+  <img src="./img/term1.JPG" title="Cmder image" width="800" />
+</p>
+ 
 * Lancer une image Debian dans le terminal. Si vous ne l'avez pas (ce qui est le cas lors de la première éxécution de cette ligne de commande), Docker va automatiquement télécharger l'image de Debian sur Docker Hub.
 
  ```bash
  docker run -ti debian
  ```
+ 
+ <p align="center">
+  <img src="./img/term2.JPG" title="Cmder image" width="800" />
+</p>
  
  * Un conteneur avec l'image Debian officiel de Docker Hub va se créer et vous trouvez maintenant dans le conteneur. Nous allons créer un fichier test.txt pour essayer.
  
@@ -116,6 +124,10 @@ Une fois que vous êtes dans votre terminal et que tout a bien été installé c
  ```bash
  ls
  ```
+ 
+ <p align="center">
+  <img src="./img/term3.JPG" title="Cmder image" width="800" />
+</p>
 
 * Ouvrez un autre terminal dans Cmder (lancer Boot2Docker ssh si nécessaire), vous allez voir toutes les images que vous avez téléchargé 
 
@@ -126,6 +138,10 @@ Une fois que vous êtes dans votre terminal et que tout a bien été installé c
  ```bash
  docker ps
  ```
+
+<p align="center">
+  <img src="./img/term4.JPG" title="Cmder image" width="800" />
+</p>
 
 * Les modifications faites à l'image de Debian n'ont toujours pas été enregistré, nous allons les sauvegarder dans une nouvelle image pour garder l'image Debian comme template pour de futurs projets (xxx représente les 3 premiers chiffres de l'image id renvoyé par votre terminal). 
 
@@ -141,8 +157,20 @@ docker commit xxx debiantest
 docker images
 ```
 
+<p align="center">
+  <img src="./img/term5.JPG" title="Cmder image" width="800" />
+</p>
+
 * Nous pouvons maintenant exporter notre image pour que d'autres personnes puissent la télécharger et l'utiliser
 
 ```
-docker save debiantest > 
+docker save debiantest > debiantest.zip
 ```
+
+<p align="center">
+  <img src="./img/term6.JPG" title="Cmder image" width="800" />
+</p>
+
+<p align="center">
+  <img src="./img/term7.JPG" title="Cmder image" width="800" />
+</p>
