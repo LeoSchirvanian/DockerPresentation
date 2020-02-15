@@ -54,32 +54,29 @@ sudo systemctl enable docker
 ## WINDOWS
 
 Vous avez le choix entre deux méthodes d'utilisation :
-* Soit vous êtes familier avec Linux et alors vous pouvez utiliser Ubuntu on Windows
 
-* Soit vous êtes totalement pro Windows et vous pouvez utiliser Boot2Docker
+* Soit vous préférez un peu d'interfaces graphiques et vous utilisez Docker Desktop
 
-### 1. UBUNTU ON WINDOWS
+* Soit vous préférez absolument tout faire dans le terminal et vous utilisez Boot2Docker
 
-* Rendez vous sur le Microsft Store et téléchargez l'application Ubuntu. Cette dernière permet en fait d'utiliser le terminal d'Ubuntu et de lancer des lignes de commande Ubuntu sous Windows.
+### 1. DOCKER DESKTOP
 
-image1
-
-* Une fois installée, il est temps d'installer ![Docker Desktop](https://www.docker.com/products/docker-desktop) afin de pouvoir se connecter facilement et télécharger des images et des docker files sur le Hub de Docker.
+1. Installez ![Docker Desktop](https://www.docker.com/products/docker-desktop) afin de pouvoir se connecter facilement et télécharger des images et des docker files sur le Hub de Docker.
 
 image2
 
-* Une fois ces étapes effectuées, lancez Cmder avec un terminal en bash et allez à la partie Installation Linux et tapez les mêmes lignes de commande dans Cmder.
+2. Lancer Docker Desktop et lancez Cmder, vous pouvez maintenant utiliser les lignes de commande de Docker
 
 ### 2. Boot2Docker
  
- * Installez simplement [Boot2Docker](https://www.ibm.com/developerworks/community/blogs/jfp/entry/running_ipython_notebooks_in_a_docker_container_on_windows?lang=en), l'installation est très bien expliqué sur ce site. 
+ 1. Installez simplement [Boot2Docker](https://www.ibm.com/developerworks/community/blogs/jfp/entry/running_ipython_notebooks_in_a_docker_container_on_windows?lang=en), l'installation est très bien expliqué sur ce site. 
  
- * Une fois cela fait vous avez fini, lancez simplement dans votre terminal favori :
+ 2. Lancez Cmder et tapez :
  
  ```bash
- Boot2Docker
+ Boot2Docker ssh
  ```
-
+Vous pouvez maintenant utiliser les lignes de commande de Docker
 
 
 
